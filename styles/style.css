@@ -46,3 +46,81 @@ header {
   cursor: pointer;
   font-weight: bold;
 }
+
+/* Title Section */
+.title-section {
+  background: #0c5f2c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.title-section h1 {
+  margin-bottom: 8px;
+}
+
+.title-section p {
+  font-size: 14px;
+}
+
+/* Main layout */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Left (cards) */
+.cards {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-btn {
+  background: #eee;
+}
+
+.call-btn {
+  background: #0c5f2c;
+  color: #fff;
+}
