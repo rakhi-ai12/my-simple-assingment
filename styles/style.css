@@ -124,3 +124,81 @@ header {
   background: #0c5f2c;
   color: #fff;
 }
+.history {
+  width: 420px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.history-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.clear {
+  background: green;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.call {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.call:last-child {
+  border-bottom: none;
+}
+
+.call .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call .name {
+  font-weight: bold;
+  color: #222;
+}
+
+.call .time {
+  font-size: 12px;
+  color: gray;
+}
+
+.call .number {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #444;
+}
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .history {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
